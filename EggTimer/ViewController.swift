@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var textTitle: UILabel!
-    
+    @IBOutlet weak var secondLabel: UILabel!
     
     let softTime = 5
     let mediumTime = 7
@@ -48,11 +48,13 @@ class ViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (Timer) in
             if self.secondsRemaining > 0 {
                 print ("\(self.secondsRemaining) seconds")
+                self.secondLabel.text = "\(self.secondsRemaining) saniye..."
                 self.secondsRemaining -= 1
             } else {
                 
                 Timer.invalidate()
                 self.textTitle.text = "DONE!"
+                self.secondLabel.text = "Yumurtanız Hazır !"
             }
             
         }

@@ -121,6 +121,15 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="568.5" width="374" height="245.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kalan Süreniz :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7UR-Jx-rxr">
+                                                <rect key="frame" x="99" y="105" width="176" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -135,6 +144,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="secondLabel" destination="7UR-Jx-rxr" id="RSn-ig-aQF"/>
                         <outlet property="textTitle" destination="XLm-5r-pSP" id="IvC-xx-J8p"/>
                     </connections>
                 </viewController>
